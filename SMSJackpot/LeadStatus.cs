@@ -1,0 +1,4 @@
+public enum LeadStatus
+{
+    INTERESTED, DO_NOT_CONTACT, NOT_CONTACTED, NOT_RESPONDED
+}
