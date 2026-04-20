@@ -1,3 +1,5 @@
+using SMSJackpot;
+
 public class Contact
 {
     public string PhoneNumber { get; set; }
@@ -5,6 +7,7 @@ public class Contact
     public LeadStatus Status { get; set; }
     public string Name = string.Empty;
     public string BusinessName = string.Empty;
+    public List<Response> ResponseList = new List<Response>();
 
     public Contact(string phoneNumber)
     {

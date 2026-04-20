@@ -4,9 +4,9 @@ public class SMSResponseCollector : IResponseCollector
 {
     private static List<Response> responses = new List<Response>()
     {
-        new Response(new Contact("505388244"), "Nie, masz downa", DateTime.Now),
-        new Response(new Contact("517512544"), "Dawaj strone", DateTime.Now),
-        new Response(new Contact("783211023"), "Moze kupie moze nie", DateTime.Now),
+        new Response(new Contact("505388244"), "Nie, masz downa", DateTime.Now, ResponseStatus.CORRECT),
+        new Response(new Contact("517512544"), "Dawaj strone", DateTime.Now, ResponseStatus.CORRECT),
+        new Response(new Contact("783211023"), "Moze kupie moze nie", DateTime.Now, ResponseStatus.ERROR),
     };
     public List<Response> GetAllResponses()
     {

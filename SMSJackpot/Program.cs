@@ -9,10 +9,9 @@ foreach (var lead in leads1)
 {
     Console.WriteLine(lead.PhoneNumber);
 }
-Campaign camp1 = new Campaign("Stolarze - Warszawa");
+Campaign camp1 = Campaign.CreateSMSCampaign("Stolarze - Warszawa");
 camp1.Leads = leads1;
 camp1.Template = template1;
 
 Postman postman = new Postman(camp1);
-IDeliveryMethod szybkiSMS = new SMSDelivery();
-postman.SendInitialMessageToAllUncontactedLeads(szybkiSMS);
+postman.SendInitialMessageToAllUncontactedLeads();
